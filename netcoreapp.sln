@@ -6,6 +6,9 @@ MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "netcoreapp", "netcoreapp.csproj", "{D4EFEA52-313F-45A7-9B0B-949CC5B51B69}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "netcoreapp.tests", "netcoreapp.tests\netcoreapp.tests.csproj", "{63DC217C-9B76-49A0-B729-360E675896B2}"
+	ProjectSection(ProjectDependencies) = postProject
+		{D4EFEA52-313F-45A7-9B0B-949CC5B51B69} = {D4EFEA52-313F-45A7-9B0B-949CC5B51B69}
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
