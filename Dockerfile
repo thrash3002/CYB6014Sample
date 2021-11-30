@@ -3,6 +3,7 @@
 	WORKDIR /app
 	EXPOSE 5000
 	COPY . /app
+	RUN dotnet dev-certs https
 	#RUN dotnet build
 	#ENTRYPOINT ["dotnet", "netcoreapp.dll"]
 	ENTRYPOINT dotnet run
