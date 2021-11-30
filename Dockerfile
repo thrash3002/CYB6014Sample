@@ -4,4 +4,5 @@
 	EXPOSE 5000
 	COPY . /app
 	RUN dotnet build
-	ENTRYPOINT ["dotnet", "netcoreapp.dll"]
+	#ENTRYPOINT ["dotnet", "netcoreapp.dll"]
+	ENTRYPOINT dotnet run
