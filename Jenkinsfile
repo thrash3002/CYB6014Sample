@@ -1,6 +1,8 @@
 pipeline {
-    docker {
-        image 'mcr.microsoft.com/dotnet/core/sdk:3.1.101'
+    agent {
+        docker {
+            image 'mcr.microsoft.com/dotnet/core/sdk:3.1.101'
+        }
     }
     stages {
         stage('VerifyEnvironent') {
